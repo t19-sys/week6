@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  margin: 30px;
+}
+
+.text a {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3rem;
+  text-transform: uppercase;
+  transition: transform 0.8s ease-in-out;
+}
+
+.text a:hover {
+  transform: scale(1.2);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.star {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url('../images/star-blank.svg');
+  background-size: cover;
+  transition: background-image 0.8s ease-in-out;
+}
+
+.star:active,
+.star:focus {
+  background-image: url('../images/star-orange.svg');
+}
